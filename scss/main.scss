@@ -1,0 +1,21 @@
+// 0. Uvozni font
+@import url('neki guglov font, recimo');
+
+// 1. Primenjeni apstrakti
+@import apstrakti/colors; // paleta boja, tema
+
+// 2. Osnovne mere
+@import osnova/body; // odnos elemenata i tekstualnog sadržaja
+@import osnova/typography; // razmaci i debljina slova, naslovi
+
+// 3. Prilagodiv raspored i izvedba (layout) sadržaja
+@import izvedba/header; // logo  i navigacija
+@import izvedba/nav; // "preklopni" navigacioni panel
+@import izvedba/gravity-center; // tema-poenta sajta
+@import izvedba/attributes-grid; // zašto je ovo bitna/dobra tema
+@import izvedba/promo-recommendation; // emotivni udarac (npr. srećni korisnik poente sajta ili nesrećnik u potrebi za poentom sajta)
+@import izvedba/conclusion; // zbog svega toga iznad, ova tema sajta je najbolje/najbitnije rešenje/pitanje
+@import izvedba/footer; // kontakt, društvene mreže, blog, o ljudima iza teme sajta
+
+// 4. Ponavljajuće komponente
+@import komponente/buttons; // dugmići usklađeni sa temom koji se pojavljuju više puta na stranici
