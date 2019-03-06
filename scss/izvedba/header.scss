@@ -1,0 +1,97 @@
+header{
+  display: flex;
+  justify-content:space-between;
+  background: $braonska
+}
+
+header #logo{
+  display: flex;
+  flex: 1 1 100px;
+  align-self: center;
+  div{
+    display: block;
+    margin-left: 1em;
+    width: 3.5em;
+    border-radius: 50%;
+    background: $slovnaBoja;
+    text-align: center;
+    img{
+      width: 3em;
+    }
+  }
+}
+
+// navBar
+
+header #navBar{
+  position: relative;
+  flex: 1 1 100px;
+  ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 75px;
+    width: 100vw;
+    transition: 250ms;
+    transition-property: transform;
+    list-style: none;
+    li a{
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      padding: 1.5em;
+      color: $slovnaBoja;
+      background: rgba(0,0,0,.8);
+      &:hover{
+        background: rgba(0,0,0,.9);
+        box-shadow: 0 0 5px 2px black;
+      }
+    }
+  }
+  .off{
+    transform: translateX(-100%);
+  }
+}
+
+#navToggle{
+  display: block;
+  position: absolute;
+  padding: 1em 0.5em;
+  top: 1em;
+  right: 1em;
+  transition: 200ms;
+  transition-property: box-shadow;
+  &:hover{
+    box-shadow: 0 0 3px 1px $sjajnaBoja;
+  }
+  #hamburger, #hamburger::before, #hamburger::after{
+    content: '';
+    background: $slovnaBoja;
+    display: block;
+    height: 4px;
+    width: 2.5em;
+  }
+  #hamburger{
+    transition: 300ms;
+    transition-timing-function: ease;
+    transition-property: transform, opacity;
+    &::before{
+      transform: translateY(-9px);
+    }
+    &::after{
+      transform: translateY(6px);
+    }
+  }
+  #hamburger.on{
+    transform: rotate(35deg);
+    &::before{
+      transform: translateY(0);
+      transform: rotate(-70deg);
+    }
+    &::after{
+      opacity: 0;
+    }
+  }
+}

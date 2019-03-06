@@ -1,0 +1,27 @@
+#gravity-center{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: rgba(0,0,0,0.3);
+  img{
+    position: absolute;
+    display: flex;
+    flex: 1 1 auto;
+    width: 240vw;
+    left: -85vw;
+    z-index: -2;
+    &::after{
+      position: absolute;
+      content: 'jklajs;lkdjfa;j';
+      display: block;
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;
+      background: black;
+      // rgba(0,0,0,0.5);
+      z-index: -1;
+    }
+  }
+
+}

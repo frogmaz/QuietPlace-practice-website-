@@ -1,0 +1,11 @@
+footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: grey;
+  nav a {
+    width: 100px;
+    height: 100px;
+    background: black;
+  }
+}
