@@ -1,0 +1,33 @@
+#attributes{
+  background: $braonska;
+  h3{
+    margin: 1em;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 0;
+    list-style: none;
+    .attr{
+      text-align: center;
+      margin: 0 5vw 2em 5vw;
+      img{
+        width: 100px;
+        background: $slovnaBoja;
+        border-radius: 40%;
+        padding: 5px;
+      }
+      h4{
+        color: $slovnaBoja;
+        margin: 0.5em;
+      }
+      p{
+        color: $slovnaBoja;
+        background: rgba(255,255,255, 0.2);
+        border-radius: 5px;
+        padding: 1em;
+      }
+    }
+  }
+}

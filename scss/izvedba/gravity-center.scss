@@ -10,18 +10,24 @@
     width: 240vw;
     left: -85vw;
     z-index: -2;
-    &::after{
-      position: absolute;
-      content: 'jklajs;lkdjfa;j';
-      display: block;
-      left:0;
-      right:0;
-      top:0;
-      bottom:0;
-      background: black;
-      // rgba(0,0,0,0.5);
-      z-index: -1;
-    }
+  }
+  text-shadow: 1px 1px black;
+  h1{
+    margin-left: 0.5em;
+  }
+  h3{
+    margin: -1em 0 0 5em ;
+  }
+  p{
+
+  }
+  #credits{
+    position: absolute;
+    bottom: 10px;
+    right:  10px;
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px $slovnaBoja;
   }
 
 }
