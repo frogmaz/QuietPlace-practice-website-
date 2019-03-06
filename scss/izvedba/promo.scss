@@ -1,7 +1,9 @@
 #promo{
   position: relative;
+  margin-top: -2em;
+  clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
   img{
-    width: 120vw;
+    width: 125vw;
   }
   h3{
     position: absolute;

@@ -9,7 +9,7 @@
   display: grid;
   -ms-grid-columns: (1fr)[5];
   grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: minmax(80px, auto);
+  grid-auto-rows: minmax(50px, auto);
   overflow: hidden; }
   #wraper header {
     -ms-grid-column: 1;
@@ -35,7 +35,24 @@
   #wraper #promo {
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
-    grid-column: 1/6; }
+    grid-column: 1/6;
+    -ms-grid-row: 12;
+    -ms-grid-row-span: 1;
+    grid-row: 12/13; }
+  #wraper #conclusion {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/6;
+    -ms-grid-row: 13;
+    -ms-grid-row-span: 1;
+    grid-row: 13/14; }
+  #wraper footer {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/6;
+    -ms-grid-row: 14;
+    -ms-grid-row-span: 1;
+    grid-row: 14/15; }
 
 body {
   font-family: 'Libre Franklin', sans-serif;
@@ -181,6 +198,7 @@ header #navBar {
   position: relative;
   display: block;
   background: rgba(0, 0, 0, 0.3);
+  height: 80vh;
   text-shadow: 1px 1px black; }
   #gravity-center img {
     position: absolute;
@@ -209,7 +227,8 @@ header #navBar {
     text-shadow: 1px 1px #e3ddd6; }
 
 #attributes {
-  background: #5c3016; }
+  background: #5c3016;
+  padding-bottom: 1em; }
   #attributes h3 {
     margin: 1em; }
   #attributes ul {
@@ -245,9 +264,12 @@ header #navBar {
         padding: 1em; }
 
 #promo {
-  position: relative; }
+  position: relative;
+  margin-top: -2em;
+  -webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%); }
   #promo img {
-    width: 120vw; }
+    width: 125vw; }
   #promo h3 {
     position: absolute;
     color: #5c3016;
@@ -261,12 +283,21 @@ header #navBar {
     background: rgba(0, 0, 0, 0.4);
     padding: 0.5em; }
 
+#conclusion {
+  background: #5c3016;
+  position: relative;
+  margin-top: -1em; }
+  #conclusion p {
+    position: absolute;
+    width: 70vw;
+    top: 0;
+    left: 2em;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.5em; }
+  #conclusion h3 {
+    position: absolute;
+    bottom: 1em;
+    left: 2em; }
+
 footer {
-  display: block;
-  position: absolute;
-  bottom: 0;
   background: grey; }
-  footer nav a {
-    width: 100px;
-    height: 100px;
-    background: black; }

@@ -1,0 +1,18 @@
+#conclusion{
+  background: $braonska;
+  position: relative;
+  margin-top: -1em;
+  p{
+    position: absolute;
+    width: 70vw;
+    top: 0;
+    left: 2em;
+    background: rgba(0,0,0,0.4);
+    padding: 0.5em;
+  }
+  h3{
+    position: absolute;
+    bottom: 1em;
+    left: 2em;
+  }
+}
