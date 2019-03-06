@@ -1,12 +1,11 @@
 #gravity-center{
   position: relative;
   display: block;
-  overflow: hidden;
   background: rgba(0,0,0,0.3);
   img{
     position: absolute;
     display: flex;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     width: 240vw;
     left: -85vw;
     z-index: -2;
@@ -19,7 +18,8 @@
     margin: -1em 0 0 5em ;
   }
   p{
-
+    margin: 5em 2em 0 3em;
+    max-width: 70vw;
   }
   #credits{
     position: absolute;
