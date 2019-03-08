@@ -97,3 +97,28 @@ header #navBar{
     }
   }
 }
+
+@media only screen and (min-width: 885px){
+  header #navBar{
+    ul{
+      position: relative;
+      flex-direction: row;
+      right: 0;
+      top: 0;
+      width: auto;
+      li a{
+        background: none;
+        &:hover{
+          background: none;
+          box-shadow: none;
+        }
+      }
+    }
+    .off{
+      transform: none;
+    }
+  }
+  header #navToggle{
+    display: none;
+  }
+}

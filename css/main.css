@@ -194,29 +194,54 @@ header #navBar {
     #navToggle #hamburger.on::after {
       opacity: 0; }
 
+@media only screen and (min-width: 885px) {
+  header #navBar ul {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    right: 0;
+    top: 0;
+    width: auto; }
+    header #navBar ul li a {
+      background: none; }
+      header #navBar ul li a:hover {
+        background: none;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+  header #navBar .off {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+  header #navToggle {
+    display: none; } }
+
 #gravity-center {
   position: relative;
   display: block;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   height: 80vh;
-  text-shadow: 1px 1px black; }
-  #gravity-center img {
+  text-shadow: 2px 2px black; }
+  #gravity-center::before {
+    content: '';
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-    width: 240vw;
-    left: -85vw;
-    z-index: -2; }
+    display: block;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: grey;
+    background: url("https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80") no-repeat;
+    background-position: 60% center;
+    background-size: auto 110%; }
   #gravity-center h1 {
     margin-left: 0.5em; }
   #gravity-center h3 {
-    margin: -1em 0 0 5em; }
+    margin: -1em 0 0 4.5em; }
   #gravity-center p {
-    margin: 5em 2em 0 3em;
+    margin: 5em 1.5em 0 2.5em;
     max-width: 70vw; }
   #gravity-center #credits {
     position: absolute;
@@ -227,9 +252,33 @@ header #navBar {
     color: black;
     text-shadow: 1px 1px #e3ddd6; }
 
+@media only screen and (min-width: 885px) {
+  #gravity-center {
+    height: 85vh; }
+    #gravity-center::before {
+      background-position: center;
+      background-size: 100% auto; }
+    #gravity-center h1 {
+      margin-left: 1.5em;
+      font-size: 5em; }
+    #gravity-center h3 {
+      margin: -1.5em 0 0 11em; }
+    #gravity-center p {
+      max-width: 50vw; } }
+
+@media only screen and (min-width: 991px) {
+  #gravity-center {
+    height: 98vh; }
+    #gravity-center h1 {
+      margin-left: 1em;
+      font-size: 6em; }
+    #gravity-center p {
+      max-width: 40vw;
+      margin-left: 6em; } }
+
 #attributes {
   background: #5c3016;
-  padding-bottom: 1em; }
+  padding-bottom: 2em; }
   #attributes h3 {
     margin: 1em; }
   #attributes ul {
@@ -259,25 +308,56 @@ header #navBar {
           -webkit-box-shadow: 0 0 25px 1px #35d3fa;
           box-shadow: 0 0 25px 1px #35d3fa; }
       #attributes ul .attr h4 {
-        color: #e3ddd6;
         margin: 0.5em; }
       #attributes ul .attr p {
-        color: #e3ddd6;
         background: rgba(255, 255, 255, 0.2);
         border-radius: 5px;
-        padding: 1em; }
+        padding: 1em;
+        text-align: left; }
+
+@media only screen and (min-width: 500px) {
+  #attributes {
+    padding-bottom: 3em; } }
+
+@media only screen and (min-width: 725px) {
+  #attributes {
+    padding-bottom: 5em; } }
+
+@media only screen and (min-width: 885px) {
+  #attributes {
+    margin-top: -5em;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    padding-bottom: 3.3em; }
+    #attributes h3 {
+      margin: 1.5em; }
+    #attributes ul {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      #attributes ul .attr {
+        max-width: 30vw;
+        margin: 0; } }
+
+@media only screen and (min-width: 991px) {
+  #attributes h3 {
+    margin: 1em; } }
 
 #promo {
   position: relative;
-  margin-top: -2em;
+  margin-top: -3em;
   -webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%); }
-  #promo img {
-    width: 125vw; }
+  clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
+  background: url("https://images.unsplash.com/photo-1486092476945-7f284646c58a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80") no-repeat;
+  background-position: 38% 40%;
+  min-height: 500px; }
   #promo h3 {
     position: absolute;
     color: #5c3016;
-    top: 1em;
+    top: 2em;
     left: 2em; }
   #promo p {
     position: absolute;
@@ -298,6 +378,27 @@ header #navBar {
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg); }
 
+@media only screen and (min-width: 500px) {
+  #promo {
+    margin-top: -3em;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%); }
+    #promo img {
+      width: 100%; } }
+
+@media only screen and (min-width: 725px) {
+  #promo {
+    margin-top: -5em;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%); }
+    #promo img {
+      width: 100%; } }
+
+@media only screen and (min-width: 991px) {
+  #promo {
+    overflow: hidden;
+    height: 40%; } }
+
 #conclusion {
   background: #5c3016;
   position: relative;
@@ -315,9 +416,17 @@ header #navBar {
     left: 2em; }
 
 footer {
-  background: #331b0c; }
+  background: -webkit-gradient(linear, left top, left bottom, from(#5c3016), to(black));
+  background: -webkit-linear-gradient(#5c3016, black);
+  background: -o-linear-gradient(#5c3016, black);
+  background: linear-gradient(#5c3016, black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   footer nav {
-    background: #5c3016;
     text-align: center; }
     footer nav ul {
       display: -webkit-box;
@@ -343,3 +452,7 @@ footer {
       footer nav p a {
         text-decoration: none;
         color: #35d3fa; }
+
+@media only screen and (min-width: 500px) {
+  footer nav {
+    width: 400px; } }
