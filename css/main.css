@@ -106,7 +106,7 @@ header #navBar {
     position: absolute;
     right: 0;
     z-index: 1;
-    top: 75px;
+    top: 70px;
     width: 100vw;
     -webkit-transition: 250ms;
     -o-transition: 250ms;
@@ -130,6 +130,7 @@ header #navBar {
       background: rgba(0, 0, 0, 0.8); }
       header #navBar ul li a:hover {
         background: rgba(0, 0, 0, 0.9);
+        color: #35d3fa;
         -webkit-box-shadow: 0 0 5px 2px black;
         box-shadow: 0 0 5px 2px black; }
   header #navBar .off {
@@ -152,18 +153,17 @@ header #navBar {
   transition-property: box-shadow;
   transition-property: box-shadow, -webkit-box-shadow; }
   #navToggle:hover {
-    -webkit-box-shadow: 0 0 3px 1px #edc48e;
-    box-shadow: 0 0 3px 1px #edc48e; }
+    -webkit-box-shadow: 0 0 3px 1px #35d3fa;
+    box-shadow: 0 0 3px 1px #35d3fa; }
   #navToggle #hamburger, #navToggle #hamburger::before, #navToggle #hamburger::after {
     content: '';
     background: #e3ddd6;
     display: block;
     height: 4px;
-    width: 2.5em; }
-  #navToggle #hamburger {
-    -webkit-transition: 300ms;
-    -o-transition: 300ms;
-    transition: 300ms;
+    width: 2.5em;
+    -webkit-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
     -webkit-transition-timing-function: ease;
     -o-transition-timing-function: ease;
     transition-timing-function: ease;
@@ -172,14 +172,14 @@ header #navBar {
     -o-transition-property: transform, opacity;
     transition-property: transform, opacity;
     transition-property: transform, opacity, -webkit-transform; }
-    #navToggle #hamburger::before {
-      -webkit-transform: translateY(-9px);
-      -ms-transform: translateY(-9px);
-      transform: translateY(-9px); }
-    #navToggle #hamburger::after {
-      -webkit-transform: translateY(6px);
-      -ms-transform: translateY(6px);
-      transform: translateY(6px); }
+  #navToggle #hamburger::before {
+    -webkit-transform: translateY(-9px);
+    -ms-transform: translateY(-9px);
+    transform: translateY(-9px); }
+  #navToggle #hamburger::after {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px); }
   #navToggle #hamburger.on {
     -webkit-transform: rotate(35deg);
     -ms-transform: rotate(35deg);
@@ -223,6 +223,7 @@ header #navBar {
     bottom: 10px;
     right: 10px;
     text-decoration: none;
+    font-size: 0.8em;
     color: black;
     text-shadow: 1px 1px #e3ddd6; }
 
@@ -254,6 +255,9 @@ header #navBar {
         background: #e3ddd6;
         border-radius: 40%;
         padding: 5px; }
+        #attributes ul .attr img:hover {
+          -webkit-box-shadow: 0 0 25px 1px #35d3fa;
+          box-shadow: 0 0 25px 1px #35d3fa; }
       #attributes ul .attr h4 {
         color: #e3ddd6;
         margin: 0.5em; }
@@ -282,6 +286,17 @@ header #navBar {
     left: 2em;
     background: rgba(0, 0, 0, 0.4);
     padding: 0.5em; }
+  #promo #credits2 {
+    position: absolute;
+    bottom: 7.5em;
+    right: -5em;
+    text-decoration: none;
+    font-size: 0.8em;
+    color: black;
+    text-shadow: 1px 1px #e3ddd6;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
 
 #conclusion {
   background: #5c3016;
@@ -300,4 +315,31 @@ header #navBar {
     left: 2em; }
 
 footer {
-  background: grey; }
+  background: #331b0c; }
+  footer nav {
+    background: #5c3016;
+    text-align: center; }
+    footer nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      list-style: none;
+      padding: 20px 0; }
+      footer nav ul .sMedia {
+        width: 50px;
+        fill: #35d3fa; }
+        footer nav ul .sMedia:hover {
+          -webkit-filter: invert(77%) sepia(65%) saturate(2278%) hue-rotate(157deg) brightness(98%) contrast(100%);
+          filter: invert(77%) sepia(65%) saturate(2278%) hue-rotate(157deg) brightness(98%) contrast(100%); }
+    footer nav p {
+      color: #35d3fa;
+      padding-bottom: 7px; }
+      footer nav p a {
+        text-decoration: none;
+        color: #35d3fa; }

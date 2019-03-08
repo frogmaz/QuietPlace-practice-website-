@@ -33,7 +33,7 @@ header #navBar{
     position: absolute;
     right: 0;
     z-index: 1;
-    top: 75px;
+    top: 70px;
     width: 100vw;
     transition: 250ms;
     transition-property: transform;
@@ -47,6 +47,7 @@ header #navBar{
       background: rgba(0,0,0,.8);
       &:hover{
         background: rgba(0,0,0,.9);
+        color: $akcent;
         box-shadow: 0 0 5px 2px black;
       }
     }
@@ -65,7 +66,7 @@ header #navBar{
   transition: 200ms;
   transition-property: box-shadow;
   &:hover{
-    box-shadow: 0 0 3px 1px $sjajnaBoja;
+    box-shadow: 0 0 3px 1px $akcent;
   }
   #hamburger, #hamburger::before, #hamburger::after{
     content: '';
@@ -73,11 +74,11 @@ header #navBar{
     display: block;
     height: 4px;
     width: 2.5em;
-  }
-  #hamburger{
-    transition: 300ms;
+    transition: 400ms;
     transition-timing-function: ease;
     transition-property: transform, opacity;
+  }
+  #hamburger{
     &::before{
       transform: translateY(-9px);
     }

@@ -1,4 +1,30 @@
 footer {
-  background: grey;
-  
+  background: darken($braonska, 10%);
+  nav {
+    background: $braonska;
+    text-align: center;
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      list-style: none;
+      padding: 20px 0;
+      .sMedia{
+        width: 50px;
+        fill: $akcent;
+        &:hover{
+          filter: invert(77%) sepia(65%) saturate(2278%) hue-rotate(157deg) brightness(98%) contrast(100%);
+        }
+      }
+    }
+    p{
+      color:$akcent;
+      padding-bottom: 7px;
+      a{
+        text-decoration: none;
+        color:$akcent;
+      }
+    }
+  }
+
 }
