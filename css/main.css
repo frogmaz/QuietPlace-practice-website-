@@ -89,6 +89,52 @@ header #logo {
     text-align: center; }
     header #logo div img {
       width: 3em; }
+  header #logo .l0 {
+    z-index: 1; }
+  header #logo .logoTail {
+    margin: 0;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: animLogo;
+    animation-name: animLogo;
+    -webkit-animation-duration: 3.3s;
+    animation-duration: 3.3s; }
+  header #logo .l1 {
+    opacity: 0.8;
+    margin-left: -3.5em;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+  header #logo .l2 {
+    opacity: 0.6;
+    margin-left: -3.5em;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s; }
+  header #logo .l3 {
+    opacity: 0.4;
+    margin-left: -3.5em;
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s; }
+  header #logo .l4 {
+    opacity: 0.2;
+    margin-left: -3.5em;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s; }
+
+@-webkit-keyframes animLogo {
+  0% { }
+  50% {
+    -webkit-transform: translate(2.5em, -0.5em);
+    transform: translate(2.5em, -0.5em);
+    opacity: 0;
+    background: #35d3fa; } }
+
+@keyframes animLogo {
+  0% { }
+  50% {
+    -webkit-transform: translate(2.5em, -0.5em);
+    transform: translate(2.5em, -0.5em);
+    opacity: 0;
+    background: #35d3fa; } }
 
 header #navBar {
   position: relative;

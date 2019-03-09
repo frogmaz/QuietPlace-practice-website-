@@ -20,7 +20,49 @@ header #logo{
       width: 3em;
     }
   }
+  .l0{
+    z-index: 1;
+  }
+  .logoTail{
+    margin: 0;
+    animation-iteration-count: infinite;
+    animation-name: animLogo;
+    animation-duration: 3.3s;
+  }
+  .l1{
+    opacity: 0.8;
+    margin-left: -3.5em;
+    animation-delay: 0.3s;
+  }
+  .l2{
+    opacity: 0.6;
+    margin-left: -3.5em;
+    animation-delay: 0.6s;
+
+  }
+  .l3{
+    opacity: 0.4;
+    margin-left: -3.5em;
+    animation-delay: 0.9s;
+
+  }
+  .l4{
+    opacity: 0.2;
+    margin-left: -3.5em;
+    animation-delay: 1.2s;
+
+  }
 }
+
+@keyframes animLogo{
+  0%{}
+  50%{
+    transform: translate(2.5em, -0.5em);
+    opacity: 0;
+    background: $akcent;
+  }
+}
+
 
 // navBar
 
